@@ -5,10 +5,8 @@ const Schema = require('mongoose').Schema;
 const bootSchema = new Schema ({
     name: { required: true, type: String },
     brand: { required: true, type: String },
-    color: { required: true, type: String },
-    price: { required: true, type: Number },
+    price: { required: true, type: Number, default: 0},
     category: { type: Schema.Types.ObjectId, ref: 'Category' },
-    user: { type: Schema.Types.ObjectId, ref: 'User' }
 }, {
     timestamps: true
 })

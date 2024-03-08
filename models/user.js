@@ -1,5 +1,6 @@
 require('dotenv').config()
-const { Schema, model } = require('mongoose')
+const mongoose = require('mongoose');
+const { Schema, model } = mongoose;
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const SALT_ROUNDS = 6
